@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sign up | ISight</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/ISight.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+	
+</head>
+
+<body>
+
+    <div class="brand">ISight</div>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header" text-left>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">ISight</a>
+				
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12 text-center">
+					<h3>Register for free</h3>
+					<form name="form" class="modal-content animate" action="http://192.168.43.230:8080/Project_iSight_Enterprise-war/UserRegistration" method= "GET">
+					
+						<table align="center">
+							<tr>
+								<td><br/>
+											Surname:
+								</td>
+								<td>
+									<br/><input type="text" name="surname" pattern="[A-Za-z]*" size = "25" required title="please enter only letters. e.g Baloyi" placeholder="Enter your surname" />
+								</td>
+							</tr>
+							<tr>
+								<td><br/>
+									First Name:
+								</td>
+								<td>
+									<br/><input type = "text" name = "first_name" pattern = "[A-Za-z]*" size="25" required title = "please enter only letters e.g John" placeholder = "Enter your first name"/>
+								</td>
+							</tr>
+							<tr>
+							<tr>
+								<td><br/>
+									Identity Number:
+								</td>
+								<td>
+									<br/><input type="text" name="id_number" size="25" pattern="[0-9]{13}$" required title = "please enter 13 numbers" placeholder="Enter your Identity number" />
+								</td>
+							</tr>
+							<tr>
+								<td><br/>
+									Contact Number:
+								</td>
+								<td>
+									<br/><input type="text" name="phone" size="15"  pattern="^\d{3}\d{3}\d{4}$" title="please enter 10 numbers starting with 0 e.g 0791234567" placeholder="Enter your contact number" />
+								</td>
+							</tr>
+							<tr>
+								<td><br/>
+									Email:
+								</td>
+								<td>
+									<br/><input type="text" size="18" name="user_id" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$" required title="please enter email in the following format: me@example.com" "placeholder="me@example.com" />
+								</td>
+							</tr>
+							<tr>
+								<td><br/>
+									Password:
+								</td>
+								<td>
+									<br/><input type="password" name="password" id ='password'size="45" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" placeholder="Enter your password"/>
+									<button type="button" onclick="if(password.type == 'text') password.type = 'password'; else password.type = 'text';">Show</button>
+								</td>
+							<tr>
+								<td><br/>
+									Confirm password:
+								</td>
+								<td>
+									<br/><input type="password" name="password" required  size="45" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder="Please confirm your password" title="Please confirm your password"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+						
+								</td>
+								<td><br/>
+									<input type="submit" name="btnSubmit" value="SUBMIT"/>
+									<button type="reset" name="btnReset" class="cancelbtn">Reset</button>
+									<p>Already registered? <a href="sign in.html">Click here!</a></p>
+								</td>
+							</tr>
+						</table>
+					</form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy ISight<br />
+						Design &amp development by TeamVisionTUT<br />
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
